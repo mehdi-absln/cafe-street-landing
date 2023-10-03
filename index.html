@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <title>Cafe Street Landing</title>
+</head>
+<body>
+<!--Start Header-->
+<header>
+    <nav class="nav">
+        <div class="container nav-row flex align-center">
+            <div class="nav-brand">
+                <img src="img/logo_coffe.svg" alt="logo">
+            </div>
+            <img class="hamburger-menu" alt="hamburgerMenu"
+                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCI+CjxwYXRoIGQ9Ik0gMCA5IEwgMCAxMSBMIDUwIDExIEwgNTAgOSBaIE0gMCAyNCBMIDAgMjYgTCA1MCAyNiBMIDUwIDI0IFogTSAwIDM5IEwgMCA0MSBMIDUwIDQxIEwgNTAgMzkgWiI+PC9wYXRoPgo8L3N2Zz4="/>
+            <ul class="nav-ul flex">
+                <li><a class="fs-4 pointer nav-link active" href="#">About us</a></li>
+                <li><a class="fs-4 pointer nav-link" href="#">Our Product</a></li>
+                <li><a class="fs-4 pointer nav-link" href="#">Delivery</a></li>
+            </ul>
+            <div class="align-center nav-searchbar flex">
+                <label for="no-submit"></label>
+                <input id="no-submit" class="nav-input" type="search" placeholder="Cappuccino">
+                <svg class="nav-icon-cart pointer" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.66667 9.33333H25.0533C25.4259 9.33334 25.7943 9.41142 26.1349 9.56254C26.4754 9.71365 26.7805 9.93444 27.0305 10.2107C27.2805 10.4869 27.4698 10.8125 27.5863 11.1664C27.7027 11.5203 27.7437 11.8946 27.7067 12.2653L26.9067 20.2653C26.8409 20.9233 26.5329 21.5334 26.0426 21.9772C25.5523 22.4209 24.9146 22.6666 24.2533 22.6667H11.52C10.9033 22.6669 10.3056 22.4534 9.82859 22.0625C9.35162 21.6716 9.02487 21.1274 8.904 20.5227L6.66667 9.33333Z"
+                          stroke="#1D1D1D" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M21.3333 28H24M6.66667 9.33333L5.58667 5.00933C5.51444 4.721 5.34794 4.46508 5.11361 4.28221C4.87928 4.09934 4.59057 4.00001 4.29333 4H2.66667L6.66667 9.33333ZM10.6667 28H13.3333H10.6667Z"
+                          stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="27" cy="9" r="4.5" fill="#FF912B" stroke="white"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--End Header-->
+<!--Start Main-->
+<main>
+    <section class="banner-section">
+        <div class="row justify-between banner-section-row container align-center">
+            <div class="banner-description-container">
+                <h1 class="banner-description-heading lh-normal fw-600 dark">Enjoy your <span>coffee</span>
+                    before
+                    your
+                    activity
+                </h1>
+                <p class="lh-normal">Boost your productivity and build your mood with a glass of coffee in the
+                    morning</p>
+                <div>
+                    <button class="btn btn-large btn-primary cta-btn">
+                        Order now
+                        <i class="cta-btn-icon p-relative"></i>
+                    </button>
+                    <button class="btn btn-small banner-description-text-btn">More menu</button>
+                </div>
+            </div>
+            <div class="banner-hero-img-container">
+                <img src="img/img-hero@3x.png" alt="hero">
+            </div>
+        </div>
+    </section>
+    <section class="popular-section p-relative">
+        <div class="popular-section-bg p-absolute"></div>
+        <div class="container">
+            <h2 class="fs-2 fw-600">Popular <span class="underline p-relative">Now</span></h2>
+            <div class="row popular-section-row p-relative">
+                <div class="popular-product-card-wrapper">
+                    <div class="popular-product-card">
+                        <div class="popular-product-card-image p-relative">
+                            <img src="img/unsplash_3n3mPoGko8g.svg" alt="Vanilla Latte">
+                            <div class="popular-product-badge p-absolute">
+                                <div class="flex center">
+                                    <span class="dark fw-bold fs-5">4.8</span>
+                                    <i class="flex center">
+                                        <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z"
+                                                  fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product-card-head justify-between flex align-center">
+                            <h3 class="fs-3 fw-600 dark">Vanilla Latte</h3>
+                            <span class="fs-3 fw-bold dark">21K</span>
+                        </div>
+                        <div class="popular-product-card-buttons flex justify-between align-center">
+                            <div>
+                                <button class="btn popular-product-card-btn active fw-600">
+                                    Hot
+                                </button>
+                                <button class="btn popular-product-card-btn fw-600">
+                                    Cold
+                                </button>
+                            </div>
+                            <a href="#"><img class="cart-icon" src="img/group-2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-product-card-wrapper">
+                    <div class="popular-product-card">
+                        <div class="popular-product-card-image p-relative">
+                            <img src="img/unsplash_SqYmTDQYMjo%20(1).svg" alt="Espresso">
+                            <div class="popular-product-badge p-absolute">
+                                <div class="flex center">
+                                    <span class="dark fw-bold fs-5">4.8</span>
+                                    <i class="flex center">
+                                        <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z"
+                                                  fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product-card-head justify-between flex align-center">
+                            <h3 class="fs-3 fw-600 dark">Espresso</h3>
+                            <span class="fs-3 fw-bold dark">12K</span>
+                        </div>
+                        <div class="popular-product-card-buttons flex justify-between align-center">
+                            <div>
+                                <button class="btn popular-product-card-btn fw-600">
+                                    Hot
+                                </button>
+                                <button class="btn popular-product-card-btn fw-600">
+                                    Cold
+                                </button>
+                            </div>
+                            <a href="#"><img class="cart-icon" src="img/group-2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-product-card-wrapper">
+                    <div class="popular-product-card">
+                        <div class="popular-product-card-image p-relative">
+                            <img src="img/unsplash_QXzdFy92CGY.svg" alt="Hazelnut Latte">
+                            <div class="popular-product-badge p-absolute">
+                                <div class="flex center">
+                                    <span class="dark fw-bold fs-5">4.8</span>
+                                    <i class="flex center">
+                                        <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z"
+                                                  fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product-card-head justify-between flex align-center">
+                            <h3 class="fs-3 fw-600 dark">Hazelnut Latte</h3>
+                            <span class="fs-3 fw-bold dark">23K</span>
+                        </div>
+                        <div class="popular-product-card-buttons row justify-between align-center">
+                            <div>
+                                <button class="btn popular-product-card-btn fw-600">
+                                    Hot
+                                </button>
+                                <button class="btn popular-product-card-btn fw-600">
+                                    Cold
+                                </button>
+                            </div>
+                            <a href="#"><img class="cart-icon" src="img/group-2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="delivery-section">
+        <div class="container">
+            <h2 class="fs-2 fw-600 lh-normal">How to use delivery <span class="underline p-relative">service</span></h2>
+            <div class="row">
+                <div class="delivery-wrapper">
+                    <div class="flex justify-center">
+                        <img src="img/coffee-cup%202.svg" alt="coffeeCup">
+                    </div>
+                    <h3 class="fs-3 dark fw-600">choose your coffee</h3>
+                    <p class="fs-4">there are 20+ coffees for you</p>
+                </div>
+                <div class="delivery-wrapper">
+                    <div class="flex justify-center">
+                        <img src="img/food-truck%201.svg" alt="foodTruck">
+                    </div>
+                    <h3 class="fs-3 dark fw-600">we delivery it to you</h3>
+                    <p class="fs-4">Choose delivery service</p>
+                </div>
+                <div class="delivery-wrapper">
+                    <div class="flex justify-center">
+                        <img src="img/coffee-cup%202.svg" alt="coffeeCup">
+                    </div>
+                    <h3 class="fs-3 dark fw-600">Enjoy your coffee</h3>
+                    <p class="fs-4">Choose delivery service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us-section p-relative">
+        <div class="row justify-center align-center">
+            <div class="about-us-img-wrapper">
+                <div class="p-absolute">
+                    <img src="img/unsplash_3n3mPoGko8g.svg" alt="Vanilla Latte">
+                </div>
+            </div>
+            <div class="about-us-description-wrapper">
+                <div>
+                    <h2 class="fs-2 fw-600">About<span class="underline p-relative"> us</span></h2>
+                    <h3 class="fw-600 fs-3 lh-normal">We provide quality coffee, and ready to deliver.</h3>
+                    <p class="lh-normal fs-4">We are a company that makes and distributes delicious drinks. our main
+                        product is made with a
+                        secret recipe and available in stores worldwide.</p>
+                    <button class="btn btn-large btn-primary fw-bold about-us-btn">
+                        Get your coffee
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="fs-2 fw-600 lh-normal">Specia<span class="underline p-relative"> menu</span></h2>
+            <div class="row justify-between">
+                <div class="popular-product-card-wrapper">
+                    <div class="popular-product-card">
+                        <div class="popular-product-card-image p-relative">
+                            <img src="img/unsplash_SqYmTDQYMjo.svg" alt="Sandwich">
+                            <div class="popular-product-badge p-absolute">
+                                <div class="flex center">
+                                    <span class="dark fw-bold fs-5">4.8</span>
+                                    <i class="flex center">
+                                        <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z"
+                                                  fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product-card-head justify-between flex align-center">
+                            <h3 class="fs-3 fw-600 dark">Sandwich</h3>
+                            <span class="fs-3 fw-bold dark">12K</span>
+                        </div>
+                        <div class="flex justify-between align-center">
+                            <p class="fs-5 lh-normal product-text">bread with meat and vegetables</p>
+                            <a href="#"><img class="cart-icon" src="img/group-2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-product-card-wrapper">
+                    <div class="popular-product-card">
+                        <div class="popular-product-card-image p-relative">
+                            <img src="img/unsplash_SqYmTDQYMjo%20(3).svg" alt="Hot Milk">
+                            <div class="popular-product-badge p-absolute">
+                                <div class="flex center">
+                                    <span class="dark fw-bold fs-5">4.8</span>
+                                    <i class="flex center">
+                                        <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z"
+                                                  fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product-card-head justify-between flex align-center">
+                            <h3 class="fs-3 fw-600 dark">Hot Milk</h3>
+                            <span class="fs-3 fw-bold dark">12K</span>
+                        </div>
+                        <div class="flex justify-between align-center">
+                            <p class="fs-5 lh-normal product-text">Hot Milk with less sugar</p>
+                            <a href="#"><img class="cart-icon" src="img/group-2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-product-card-wrapper">
+                    <div class="popular-product-card">
+                        <div class="popular-product-card-image p-relative">
+                            <img src="img/unsplash_SqYmTDQYMjo%20(4).svg" alt="Cappucino">
+                            <div class="popular-product-badge p-absolute">
+                                <div class="flex center">
+                                    <span class="dark fw-bold fs-5">4.8</span>
+                                    <i class="flex center">
+                                        <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z"
+                                                  fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product-card-head justify-between flex align-center">
+                            <h3 class="fs-3 fw-600 dark">Cappucino</h3>
+                            <span class="fs-3 fw-bold dark">12K</span>
+                        </div>
+                        <div class="flex justify-between align-center">
+                            <p class="fs-5 lh-normal product-text">Hot Cappucino</p>
+                            <a href="#"><img class="cart-icon" src="img/group-2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-product-card-wrapper">
+                    <div class="popular-product-card">
+                        <div class="popular-product-card-image p-relative">
+                            <img src="img/unsplash_SqYmTDQYMjo%20(2).svg" alt="Waffle Ice Crem">
+                            <div class="popular-product-badge p-absolute">
+                                <div class="flex center">
+                                    <span class="dark fw-bold fs-5">4.8</span>
+                                    <i class="flex center">
+                                        <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z"
+                                                  fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product-card-head justify-between flex align-center">
+                            <h3 class="fs-3 fw-600 dark">Waffle Ice Crem</h3>
+                            <span class="fs-3 fw-bold dark">12K</span>
+                        </div>
+                        <div class="flex justify-between align-center">
+                            <p class="fs-5 lh-normal product-text">Wafle with Ice cream</p>
+                            <a href="#"><img class="cart-icon" src="img/group-2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-product-card-wrapper">
+                    <div class="popular-product-card">
+                        <div class="popular-product-card-image p-relative">
+                            <img src="img/unsplash_SqYmTDQYMjo%20(1).svg" alt="Moccacinno">
+                            <div class="popular-product-badge p-absolute">
+                                <div class="flex center">
+                                    <span class="dark fw-bold fs-5">4.8</span>
+                                    <i class="flex center">
+                                        <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z"
+                                                  fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product-card-head justify-between flex align-center">
+                            <h3 class="fs-3 fw-600 dark">Moccacinno</h3>
+                            <span class="fs-3 fw-bold dark">12K</span>
+                        </div>
+                        <div class="flex justify-between align-center">
+                            <p class="fs-5 lh-normal product-text">Hot Moccacino</p>
+                            <a href="#"><img class="cart-icon" src="img/group-2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-product-card-wrapper">
+                    <div class="popular-product-card">
+                        <div class="popular-product-card-image p-relative">
+                            <img src="img/unsplash_QXzdFy92CGY.svg" alt="Coffe Ice Cream">
+                            <div class="popular-product-badge p-absolute">
+                                <div class="flex center">
+                                    <span class="dark fw-bold fs-5">4.8</span>
+                                    <i class="flex center">
+                                        <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z"
+                                                  fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product-card-head justify-between flex align-center">
+                            <h3 class="fs-3 fw-600 dark">Coffe Ice Cream</h3>
+                            <span class="fs-3 fw-bold dark">12K</span>
+                        </div>
+                        <div class="flex justify-between align-center">
+                            <p class="fs-5 lh-normal product-text">Coffe with ice cream vanilla</p>
+                            <a href="#"><img class="cart-icon" src="img/group-2.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe-section container">
+        <div class="row justify-center align-center">
+            <div>
+                <h2 class="fw-600 lh-normal">Subscribe to get 50% discount price</h2>
+                <form onclick="event.preventDefault()" action="/" method="post">
+                    <div class="subscribe-form-wrapper p-relative">
+                        <label for="subscribe-input"></label>
+                        <input placeholder="Email address" class="fw-600" id="subscribe-input">
+                        <button class="btn btn-large btn-primary cta-btn p-absolute" type="submit">
+                            Order now
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<!--End Main-->
+</body>
+</html>
